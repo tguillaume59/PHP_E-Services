@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Tournaments {% endblock %}
+
+{# on redefini le bloc body pour afficher hello twig#}
+{%  block body %}
+    <h1>Tournaments management</h1>
+    {#<p>tu as écris {% if message %}{{ message }}{% endif %}</p>#}
+    <ul>
+        {%  for tournament in tournaments %}
+            <li>{{ tournament.name }}</li>
+        {% else %}
+            <li>No Tournaments</li>
+        {%  endfor %}
+    </ul>
+{% endblock %}

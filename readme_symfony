@@ -1,0 +1,46 @@
+
+	*********************************************
+	*  Ligne de commandes et url intéressantes  * 
+	*               pour Symfony		    *
+	*********************************************
+
+créer un nouveau projet symfony
+./composer.phar create-project -s rc symfony/skeleton:^3.4 ifi-php
+
+
+listes des bundles compatible symfony
+https://github.com/topics/symfony-bundle
+
+ou synfony.sh
+
+Permet d'avoir un composant qui génére du code tout seul
+composer require maker:^1.0@dev
+
+
+avoir les annotations
+./composer.phar require annot
+
+
+moustache (Swing) de symphony
+./composer.phar req twig
+
+installer l'orm 
+./composer.phar req orm
+
+linker la bdd 
+bin/console doctrine:schema:validate
+
+création de la bdd
+bin/console doctrine:database:create
+
+
+En utilisant la commande que nous avons créé pour ajouter un tournois
+bin/console app:create-tournament "Mon tournois 2 " "07/03/1996" // date à l'anglaise
+
+forcer à recharger les tables
+bin/console doctrine:schema:update --force
+
+
+./composer.phar req api 
+
+
